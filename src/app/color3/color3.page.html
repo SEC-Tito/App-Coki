@@ -1,0 +1,73 @@
+<ion-content class="ion-padding">
+  <ion-img src="assets/LogoCK.png" class="logo" [routerLink]="['/home']"></ion-img>
+  
+ 
+   
+      <ion-col size="6">
+        <ion-card class="card1">
+          <img alt="Silhouette of mountains" src="https://thumbs.dreamstime.com/b/cow-image-pixels-pixel-art-vector-illustration-221880179.jpg" />
+          
+          <ion-card-header class="titulo">
+            <ion-card-title>which is the Cow</ion-card-title>
+            
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+
+      <ion-card class="ionpadre"color="medium">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen1, 'class-name2': estadoimagen1 }">
+                <ion-button (click)="cambiarimagen1(estadoimagen1 !== undefined ? !estadoimagen1: false)" (click)="presentSimpleAlert()">
+                  <ion-card  class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan" src="https://ih1.redbubble.net/image.5054004036.4231/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg" />
+                  </ion-card>
+                </ion-button>
+              </div>
+              </ion-col>
+        
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen2, 'class-name2': estadoimagen2 }">
+                <ion-button (click)="cambiarimagen2(estadoimagen2 !== undefined ? !estadoimagen2 : false)"(click)="presentSimpleAlert()">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan"src="https://static.vecteezy.com/system/resources/previews/027/174/601/original/pixel-art-illustration-frog-pixelated-frog-frog-amphibi-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg" />
+                  </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen3, 'class-name2': estadoimagen3 }">
+                <ion-button (click)="cambiarimagen3(estadoimagen3 !== undefined ? !estadoimagen3 : false)"(click)="presentAlert('')">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan"  src="https://thumbs.dreamstime.com/b/cow-image-pixels-pixel-art-vector-illustration-221880179.jpg" /> </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+        
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen4, 'class-name2': estadoimagen4 }">
+
+                 <ion-button  (click)="cambiarimagen4(estadoimagen4 !== undefined ? !estadoimagen4 : false)" (click)="presentSimpleAlert()">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains"class="juan"  src="https://w7.pngwing.com/pngs/535/41/png-transparent-cute-snake-pixel-art-bead-pixel-art-animals-text-rectangle.png" /> </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+
+
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+      
+      
+    
+   
+      <ion-button  class="boton1" (click)="confirmarRedireccion()">Go to Menu 📃</ion-button>
+</ion-content>
